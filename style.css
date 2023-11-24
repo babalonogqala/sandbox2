@@ -1,3 +1,55 @@
-h1{
-    color: #333;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header > h1{
+    color: black;
+    font-size: 2rem;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+header::before{
+    content: '';
+    background: url("bernd-dittrich-Os_6mL9UEU0-unsplash.jpg")no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+div{
+    padding-top: 40px ;
+}
+/* div > p{
+    color: red;
+}
+div + p{
+    color: aqua;
+}
+li > p{
+    color: blue;
+}
+li:nth-child(3){
+    color: chartreuse;
+} */
+.container{
+    display: flex;
+    margin: auto;
+    width: 800px;
+}
+.box{
+    background: coral;
+    padding: 10px;
+    margin: 20px 10px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
 }
