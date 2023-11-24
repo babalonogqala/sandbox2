@@ -1,3 +1,11 @@
+:root{
+    --primary-color: lightblue;
+    --secondary-color:gray;
+    --border-bottom-color:2px solid lightgray;
+    --border-bottom-color-1:2px solid rgb(204, 242, 255);
+    --width:100%;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +21,6 @@ header{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
     
 }
 header::before{
@@ -52,4 +59,18 @@ li:nth-child(3){
     padding: 10px;
     margin: 20px 10px;
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.heading{
+    display: flex;
+    background: var(--primary-color);
+    border-bottom: var(--border-bottom-color-1);
+    width: var(--width) ;
+    height: 70px;
+}
+.boxes{
+    background: var(--secondary-color);
+    border-bottom: var(--border-bottom-color);
+    padding: 20px;
+    margin: 20px;
 }
